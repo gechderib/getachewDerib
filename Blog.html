@@ -89,7 +89,34 @@ This means that 1rem equals the font size of the html element (which for most br
         <section>
             <p class="title">What 16px default browser width mean and How does the browser interpret it ?</p>
             <article>
+                <p id="pp1">
+CSS3 defines new a length unit for font-size called rem. This allow us to compute element's font-size relate to the root element (html element).
+<br>
+To compute the font-size more easily , we usually assume the root element's font-size is 16px, therefore the CSS usually ends up like this:
 
+                </p>
+                <p id="box">
+                    html <br>{ <br>
+                    font-size:62.5; <br> } <br> // 10px = 16px * 0.625 <br><br>
+
+                    p <br> { <br>
+                    font-size: 1.4rem;<br> } <br> // 14px = 10px * 1.4 
+                </p>
+
+<p id="pp1">
+    The base font-size is determined by the users pre-defined preferences within the browser. <br>
+
+In almost every browser, 16px is the standard for proportional fonts. 
+This can also change dependant on if the font uses serifs or is a fixed width font. <br>
+
+Just remember, using em takes the parents font-size and is proportional to that 
+whereas rem uses the root html element <br>
+in short 16px default browser means its releative value to a given font size pixl or it is a default font-size 
+ <br>
+Example: 200px means the default font size will increase by 12.5 fold means 12.5 * 16 = 200 <br> 
+</p>
+<p >"It is the default browser font size which is 16px weather you give font-size = 16px; or not"</p>
+<p style="font-size: 200px;">it is 200px = 12.5*default</p> 
             </article>
             <p class="date">March 19 ,2020 ,7 am</p>
         </section>
